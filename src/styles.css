@@ -1,4 +1,9 @@
 
+@font-face {
+  font-family:"Roboto";
+  src: url("./fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf") format("truetype");
+}
+
 :root{
 
 }
@@ -12,4 +17,149 @@
 
 body{
   background-color: #1A1A1A;
+  color: white;
+  font-family:"Roboto", Arial, Helvetica, sans-serif;
+}
+
+#content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.location{
+  font-size: 3.5rem;
+  align-items: center;
+  margin: 1rem;
+}
+
+form{
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+form input{
+  width: 15rem;
+  height: 2rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 5px;
+}
+
+form button{
+  width: 6rem;
+  height: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+
+  border: none;
+  border-radius: 5px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form label{
+  font-size: 1.3rem;
+}
+
+.cards{
+  display: flex;
+  justify-content: space-around;
+  width: 70vw;
+  gap: 20px;
+}
+
+.dayCard{
+  height: 25rem;
+  width: 20rem;
+  padding: 1rem;
+  background-color: pink;
+
+  font-size: 1.5rem;
+  color: black;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  justify-content: space-between;
+}
+
+.dayDatebox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem 0rem;
+  gap: 20px;
+}
+
+.dayTempbox{
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5rem;
+}
+
+.dayTempbox p{
+  font-size: 1rem;
+  color: #545557;
+}
+
+.dayTempbox :nth-child(2){
+  margin-left: 0.3rem;
+}
+
+.dayTempbox :nth-child(3){
+  margin: 0rem 1rem;
+}
+
+.dayTempbox :nth-child(4){
+  margin-right: 0.3rem;
+}
+
+.weatherIcon{
+  width: 5rem;
+  height: 5rem;
+}
+
+.clear-day {
+  background-color: #4DA3FF;
+}
+
+.clear-night {
+  background-color: #0B1D3A;
+}
+
+.partly-cloudy-day {
+  background-color: #7EC8E3;
+}
+
+.partly-cloudy-night {
+  background-color: #2C3E50;
+}
+
+.cloudy {
+  background-color: #9AA5B1;
+}
+
+.wind {
+  background-color: #6FB3FF;
+}
+
+.fog {
+  background-color: #BFC9CA;
+}
+
+.rain {
+  background-color: #3C5A99;
+}
+
+.snow {
+  background-color: #EAF4FF;
 }
